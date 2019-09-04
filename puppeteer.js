@@ -11,7 +11,9 @@ const ptoi = require("puppeteer-to-istanbul");
     resetOnNavigation: false
   });
 
-  await page.goto("https://platform.stg.classi.jp/");
+  await page.goto(
+    "file:///Users/ikuo.saito/product/sample/puppeteercoverage/sample.html"
+  );
   // スクリーンショット
   await page.screenshot({ path: "screenshot.png" });
 
